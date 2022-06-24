@@ -16,12 +16,13 @@ data("imagpop")
 KK_data <- imagpop$kkardashtemp
 my1000 <- sample(KK_data, size = 1000, replace=T)
 densityplot(my1000,main="original data")
-
+print(mean(KK_data))
+print(sd(KK_data))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
-The resulting plot is unimodal because it peaks and then declines. The unimodal has 2 peaks and both peaks are different sizes the first peak is just a little hire than the second peak.
+The resulting plot is unimodal because it peaks and then declines. The unimodal has 2 peaks and both peaks are the same size.
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -31,6 +32,8 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
@@ -43,7 +46,9 @@ numb = 4
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 4")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
 Then again for 9 random samples
@@ -52,7 +57,9 @@ numb = 9
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 9")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
 then 16 random samples
@@ -61,7 +68,9 @@ numb = 16
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 16")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 finally for 36 random samples.
 ```{r}
@@ -69,7 +78,9 @@ numb = 36
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 36")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
