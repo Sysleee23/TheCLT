@@ -90,8 +90,10 @@ print(sd(x.avg))
 ```
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
+The central Limit Therom states that the distribution of sample means approximate a normal distribution as the sample size gets larger. regardless of the populations distribution. From this we can see that from the first graph we can see that in the biggining the data was at an all time high. As we began to go down with different data sample numbers the graphs went from 3 perks to one peak indicating that the numbers were dropping. For example the first graph is 41.75955 then drops down to 6.601982 which is proof that the data is decreasing.
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
+
 
  
 
