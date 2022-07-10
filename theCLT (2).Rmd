@@ -22,7 +22,7 @@ print(sd(KK_data))
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
-The resulting plot is unimodal because it peaks and then declines. The unimodal has 2 peaks and both peaks are the same size.
+The resulting plot is not utimodal because there are two peaks the resulting plot is a bimodal because there are 2 peaks in the resulting plot.The resulting plot are the same size, the mean of the plot is 50.4003, and the SD is 41.75955 for this resulting plot. and there are 0 ouliers in this plot.
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -38,7 +38,7 @@ print(sd(x.avg))
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
- The resulting plot is a unimodal because of the different peaks, there are 3 different peraks the 2 smallest are the same size and the one in the middle is the biggest size.
+The resulting plot is not utimodal because there are two peaks the resulting plot is a quadimodal because there are 3 peaks in the resulting plot.The resulting plot are not the same size, the mean of the plot is 50.5725, and the SD is 29.77275 for this resulting plot.Meaning that the SD is signifigantly declining from the first resulting plot.
 
 Do this again for 4 random samples
 ```{r}
@@ -51,6 +51,10 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size?
+
+The resulting plot is not utimodal because there are three peaks the resulting plot is a quadimodal because there are 3 peaks in the resulting plot.The resulting plot are not the same size, the mean of the plot is 50.531, and the SD is 20.8859 for this resulting plot.Meaning that the SD is signifigantly declining from the first resulting plot.There are no outliers in this resulting plot. 
+
 Then again for 9 random samples
 ```{r}
 numb = 9
@@ -62,7 +66,9 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-then 16 random samples
+Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+
+The resulting plot is a unimodal. There is one peak, and there only one peak so yes all the peaks are the same. 
 ```{r}
 numb = 16
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
@@ -72,7 +78,7 @@ densityplot(x.avg,main="sample size 16")
 print(mean(x.avg))
 print(sd(x.avg))
 ```
-finally for 36 random samples.
+
 ```{r}
 numb = 36
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
